@@ -1,5 +1,27 @@
 import React from 'react'
 import styled from 'styled-components'
+import Image from '../Image'
+
+const Wrapper = styled.a`
+  width: 100px;
+  color: ${({ theme }) => theme.colors.main};
+  text-decoration: none;
+`
+
+const Img = styled(Image)`
+  width: 100%;
+  margin-bottom: 4px;
+`
+
+const Name = styled.h4`
+  font-size: ${({ theme }) => theme.fontSizes.subTitle};
+  font-weight: bold;
+  margin: 0 0 8px;
+`
+
+const Role = styled.div`
+  width: 100%;
+`
 
 type Props = {
   name: string
@@ -8,23 +30,10 @@ type Props = {
   role: string
 }
 
-const Wrapper = styled.div`
-  width: 100px;
-`
-
-const Img = styled.img`
-  width: 100%;
-`
-
-const Role = styled.div`
-  width: 100%;
-`
-
 const Organization: React.FC<Props> = ({ name, imageUrl, link, role }) => (
-  <Wrapper>
-    <a href={link} rel="noopener noreferrer" target="_blank">
-      <Img src={imageUrl} alt={name} />
-    </a>
+  <Wrapper href={link} rel="noopener noreferrer" target="_blank">
+    <Img src={imageUrl} alt={name} />
+    <Name>{name}</Name>
     <Role>{role}</Role>
   </Wrapper>
 )

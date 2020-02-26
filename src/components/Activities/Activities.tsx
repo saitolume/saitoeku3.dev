@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
-// import Organization from './Organization'
+import CareerItem from './CareerItem'
+import Organization from './Organization'
 
 const Wrapper = styled.section`
   width: ${({ theme }) => `${theme.layout.width}px`};
@@ -20,10 +21,90 @@ const Title = styled.h2`
   padding-bottom: 16px;
 `
 
+const FlexBox = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
+const SubTitle = styled.h3`
+  font-size: ${({ theme }) => theme.fontSizes.subTitle};
+  font-weight: bold;
+  margin-bottom: 40px;
+`
+
+const Column = styled.div`
+  width: 45%;
+`
+
+const OrganizationList = styled.div`
+  display: flex;
+  justify-content: space-between;
+`
+
+const CareerList = styled.div`
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+`
+
 const Activities: React.FC = () => (
   <Wrapper>
     <Title>Activities</Title>
-    {/* <Organization name="Crowi" role="author" imageUrl="" link="https://github.com/crowi/crowi" /> */}
+    <FlexBox>
+      <Column>
+        <SubTitle>Contributions</SubTitle>
+        <OrganizationList>
+          <Organization
+            name="Crowi"
+            role="author"
+            imageUrl="crowi.png"
+            link="https://site.crowi.wiki/"
+          />
+          <Organization
+            name="Gatsby"
+            role="maintainer"
+            imageUrl="gatsby.png"
+            link="https://www.gatsbyjs.org/"
+          />
+          <Organization
+            name="KITDM"
+            role="organizer"
+            imageUrl="kitdm.png"
+            link="https://kit-developers-meetup.github.io/"
+          />
+        </OrganizationList>
+      </Column>
+      <Column>
+        <SubTitle>Career</SubTitle>
+        <CareerList>
+          <CareerItem
+            name="CirKit Co., Ltd"
+            description="Internship as Web developer, product maneger"
+            begin="2017.06"
+            end="now"
+          />
+          <CareerItem
+            name="pixiv Inc."
+            description="Internship as frontend developer"
+            begin="2019.10"
+            end="2019.10"
+          />
+          <CareerItem
+            name="Livesense Inc."
+            description="Internship as Web developer"
+            begin="2019.09"
+            end="2019.09"
+          />
+          <CareerItem
+            name="Wantedly Inc."
+            description="Internship as frontend developer"
+            begin="2019.08"
+            end="2019.08"
+          />
+        </CareerList>
+      </Column>
+    </FlexBox>
   </Wrapper>
 )
 
