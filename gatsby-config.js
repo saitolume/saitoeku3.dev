@@ -19,9 +19,9 @@ module.exports = {
         isTSX: true
       }
     },
-    'gatsby-plugin-react-helmet',
     'gatsby-transformer-sharp',
+    'gatsby-plugin-react-helmet',
     'gatsby-plugin-sharp',
-    'gatsby-plugin-styled-components'
+    'gatsby-plugin-styled-components',
   ]
 }
