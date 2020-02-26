@@ -10,7 +10,7 @@ import Footer from '../components/Footer'
 const Index: React.FC = () => {
   return (
     <>
-      <Head title="saitoeku3.dev" description="" />
+      <Head title="saitoeku3.dev" description="saitoeku3 homepage" />
       <Layout>
         <Hero />
         <Profile />
