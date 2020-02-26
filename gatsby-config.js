@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: 'saitoeku3.dev',
-    description: 'saitoeku3\'s homepage',
+    description: 'saitoeku3 homepage',
     author: 'saitoeku3'
   },
   plugins: [
@@ -18,6 +18,18 @@ module.exports = {
         allExtensions: true,
         isTSX: true
       }
+    },
+    {
+      resolve: 'gatsby-plugin-manifest',
+      options: {
+        name: 'saitoeku3.dev',
+        short_name: 'saitoeku3',
+        start_url: '/',
+        lang: 'en',
+        theme_color: '#222',
+        display: 'standalone',
+        icon: `${__dirname}/static/images/icon.jpg`
+      },
     },
     'gatsby-transformer-sharp',
     'gatsby-plugin-react-helmet',
