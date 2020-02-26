@@ -22,7 +22,7 @@ const Name = styled.div`
 
 const Description = styled.p`
   width: 100%;
-  line-height: 32px;
+  line-height: 30px;
   margin: 0;
 `
 

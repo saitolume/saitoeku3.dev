@@ -21,12 +21,9 @@ const Name = styled.div`
   margin-bottom: 4px;
 `
 
-const Date = styled.div`
-  font-size: ${({ theme }) => theme.fontSizes.paragraph};
-`
-
 const Description = styled.div`
   width: 55%;
+  line-height: 30px;
 `
 
 type Props = {
@@ -41,9 +38,9 @@ const CareerItem: React.FC<Props> = ({ name, description, begin, end }) => (
     <FlexBox>
       <Meta>
         <Name>{name}</Name>
-        <Date>
+        <div>
           {begin} - {end}
-        </Date>
+        </div>
       </Meta>
       <Description>{description}</Description>
     </FlexBox>
