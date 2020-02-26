@@ -1,26 +1,29 @@
 import React from 'react'
 import styled from 'styled-components'
+import Image from '../Image'
 
 const Wrapper = styled.div`
   width: 310px;
 `
 
-const Img = styled.div<{ src: string }>`
+const Img = styled(Image)`
   width: 100%;
   height: 190px;
   background-color: #fff;
-  display: flex;
-  font-size: ${({ theme }) => theme.fontSizes.subTitle};
-  font-weight: bold;
+  overflow: hidden;
+  margin-bottom: 12px;
 `
 
 const Name = styled.div`
-  margin: auto;
+  font-size: ${({ theme }) => theme.fontSizes.subTitle};
+  font-weight: bold;
+  margin: auto auto 12px;
 `
 
 const Description = styled.p`
   width: 100%;
   line-height: 32px;
+  margin: 0;
 `
 
 type Props = {
@@ -31,9 +34,8 @@ type Props = {
 
 const WorkItem: React.FC<Props> = ({ name, imageUrl, description }) => (
   <Wrapper>
-    <Img src={imageUrl}>
-      <Name>{name}</Name>
-    </Img>
+    <Name>{name}</Name>
+    <Img src={imageUrl} alt={name} />
     <Description>{description}</Description>
   </Wrapper>
 )
