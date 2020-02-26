@@ -1,1 +1,1 @@
-export * from './Works'
+export { default as Works } from './Works'
