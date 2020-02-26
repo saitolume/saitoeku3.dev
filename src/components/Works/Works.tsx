@@ -34,32 +34,32 @@ const Works: React.FC = () => (
     <WorkList>
       <WorkItem
         name="Liverty Studio"
-        imageUrl=""
+        imageUrl="liverty-studio.png"
         description="Live streaming software for Vertual Liver that only nees VRM"
       />
       <WorkItem
         name="Neko DJ"
-        imageUrl=""
-        description="DJ Neko Hacker's tracks on Web produced by Neko Hackathon"
+        imageUrl="nekodj.png"
+        description="DJ Neko Hacker tracks on your smartphone"
       />
       <WorkItem
-        name="Official Web site"
-        imageUrl=""
-        description="Official Web site for virtual creator Toto Hoshimiya"
+        name="Official Site"
+        imageUrl="official-site.png"
+        description="Official Site for a virtual creator (work in progress)"
       />
       <WorkItem
         name="clipstudio.js"
-        imageUrl=""
+        imageUrl="clipstudiojs.png"
         description="A JavaScript library for using .clip file on browsers and Node.js"
       />
       <WorkItem
         name="use-lazyload-ref"
-        imageUrl=""
+        imageUrl="use-lazyload-ref.png"
         description="Custom hook libraly to use lazyload easily"
       />
       <WorkItem
         name="Homepage"
-        imageUrl=""
+        imageUrl="homepage.png"
         description="My first homepage made of Gatsby (This site)"
       />
     </WorkList>
