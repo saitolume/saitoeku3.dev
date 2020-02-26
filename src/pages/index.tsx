@@ -5,6 +5,7 @@ import { Hero } from '../components/Hero'
 import { Profile } from '../components/Profile'
 import { Works } from '../components/Works'
 import { Activities } from '../components/Activities'
+import Footer from '../components/Footer'
 
 const Index: React.FC = () => {
   return (
@@ -15,6 +16,7 @@ const Index: React.FC = () => {
         <Profile />
         <Works />
         <Activities />
+        <Footer />
       </Layout>
     </>
   )
