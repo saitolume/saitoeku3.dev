@@ -7,9 +7,10 @@
   "private": true,
   "scripts": {
     "build": "gatsby build",
-    "dev": "gatsby develop",
+    "dev": "concurrently 'gatsby develop' 'yarn codegen' ",
     "format": "eslint --fix \"src/**/*.{ts,tsx}\"",
-    "lint": "eslint \"src/**/*.{ts,tsx}\""
+    "lint": "eslint \"src/**/*.{ts,tsx}\"",
+    "codegen": "graphql-codegen --watch"
   },
   "dependencies": {
     "core-js": "3",
