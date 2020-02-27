@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import Social from './Social'
 
 const Wrapper = styled.section`
   width: 100vw;
@@ -28,6 +29,14 @@ const Name = styled.h1`
 const Message = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.subTitle};
   font-weight: bold;
+  margin-bottom: 64px;
+`
+
+const SocialList = styled.div`
+  width: 500px;
+  display: flex;
+  justify-content: space-between;
+  margin: 0 auto;
 `
 
 const Hero: React.FC = () => (
@@ -38,6 +47,12 @@ const Hero: React.FC = () => (
     />
     <Name>saitoeku3</Name>
     <Message>&ldquo;Create future that touches your heart.&ldquo;</Message>
+    <SocialList>
+      <Social name="Twitter" imageUrl="twitter.png" link="https://twitter.com/saitoeku3/" />
+      <Social name="GitHub" imageUrl="github.png" link="https://github.com/saitoeku3/" />
+      <Social name="Blog" imageUrl="hatenablog.png" link="https://sathoeku.hatenablog.com/" />
+      <Social name="Slides" imageUrl="speakerdeck.png" link="https://speakerdeck.com/saitoeku3/" />
+    </SocialList>
   </Wrapper>
 )
 
