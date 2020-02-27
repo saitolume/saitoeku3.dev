@@ -19,6 +19,10 @@ const Thumbnail = styled.img`
   border: 4px solid #fff;
   border-radius: 50%;
   margin: 20vh auto 40px auto;
+  ${media.lessThan('mobile')`
+    font-size: 20px;
+    margin: 15vh auto 40px auto;
+  `}
 `
 
 const Name = styled.h1`
@@ -33,6 +37,7 @@ const Message = styled.p`
   margin-bottom: 64px;
   ${media.lessThan('mobile')`
     font-size: 20px;
+    margin-bottom: 40px;
   `}
 `
 

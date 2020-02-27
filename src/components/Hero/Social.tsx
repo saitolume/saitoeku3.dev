@@ -31,8 +31,13 @@ const Icon = styled(Image)`
 
 const Name = styled.div`
   color: #fff;
-  font-size: ${({ theme }) => theme.fontSizes.paragraph};
   margin: auto;
+  ${media.greaterThan('mobile')`
+    font-size: ${({ theme }) => theme.fontSizes.paragraph};
+  `}
+  ${media.lessThan('mobile')`
+    font-size: 100%;
+  `}
 `
 
 type Props = {
