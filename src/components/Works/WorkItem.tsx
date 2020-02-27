@@ -1,16 +1,15 @@
 import React from 'react'
 import styled from 'styled-components'
-import Image from '../Image'
+import BackgroundImage from '../BackgroundImage'
 
 const Wrapper = styled.div`
   width: 310px;
 `
 
-const Img = styled(Image)`
+const Img = styled(BackgroundImage)`
   width: 100%;
   height: 190px;
   background-color: #fff;
-  overflow: hidden;
   margin-bottom: 12px;
 `
 
