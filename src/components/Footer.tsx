@@ -1,5 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
+import { media } from '../utils/mediaQueries'
 
 const Wrapper = styled.div`
   width: 100%;
@@ -8,6 +9,9 @@ const Wrapper = styled.div`
   color: #fff;
   display: flex;
   font-size: ${({ theme }) => theme.fontSizes.paragraph};
+  ${media.lessThan('mobile')`
+    font-size: 16px;
+  `}
 `
 
 const CopyRight = styled.div`

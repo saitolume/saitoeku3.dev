@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import HobbyItem from './HobbyItem'
+import { media } from '../../utils/mediaQueries'
 
 const Wrapper = styled.section`
   width: ${({ theme }) => `${theme.layout.width}px`};
@@ -11,24 +12,39 @@ const Wrapper = styled.section`
   margin: 0 auto;
   padding: 8vh 0;
   text-align: center;
+  ${media.lessThan('mobile')`
+    width: 300px;
+  `}
 `
+
 const Title = styled.h2`
   border-bottom: 4px solid ${({ theme }) => theme.colors.main};
   font-size: ${({ theme }) => theme.fontSizes.title};
   font-weight: bold;
   margin: 0 0 32px;
   padding-bottom: 16px;
+  ${media.lessThan('mobile')`
+    font-size: 32px;
+    margin: 0 0 24px;
+  `}
 `
 
 const MyName = styled.h3`
   font-size: ${({ theme }) => theme.fontSizes.subTitle};
   font-weight: bold;
   margin: 0;
+  ${media.lessThan('mobile')`
+    margin: 0 0 -4px;
+  `}
 `
 
 const Biography = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.paragraph};
   margin-bottom: 16px;
+  ${media.lessThan('mobile')`
+    font-size: 16px;
+    line-height: 24px;
+  `}
 `
 
 const Email = styled.p`
@@ -40,11 +56,17 @@ const Email = styled.p`
 const Small = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.paragraph};
   margin-bottom: 32px;
+  ${media.lessThan('mobile')`
+    font-size: 16px;
+  `}
 `
 
 const HobbyList = styled.div`
   display: flex;
   justify-content: space-between;
+  ${media.lessThan('mobile')`
+    display: block;
+  `}
 `
 
 const Profile: React.FC = () => (

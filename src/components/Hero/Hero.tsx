@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Social from './Social'
+import { media } from '../../utils/mediaQueries'
 
 const Wrapper = styled.section`
   width: 100vw;
@@ -30,6 +31,9 @@ const Message = styled.p`
   font-size: ${({ theme }) => theme.fontSizes.subTitle};
   font-weight: bold;
   margin-bottom: 64px;
+  ${media.lessThan('mobile')`
+    font-size: 20px;
+  `}
 `
 
 const SocialList = styled.div`
@@ -37,6 +41,9 @@ const SocialList = styled.div`
   display: flex;
   justify-content: space-between;
   margin: 0 auto;
+  ${media.lessThan('mobile')`
+    width: 300px;
+  `}
 `
 
 const Hero: React.FC = () => (

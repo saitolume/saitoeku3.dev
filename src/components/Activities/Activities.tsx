@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import CareerItem from './CareerItem'
 import Organization from './Organization'
+import { media } from '../../utils/mediaQueries'
 
 const Wrapper = styled.section`
   width: ${({ theme }) => `${theme.layout.width}px`};
@@ -12,6 +13,12 @@ const Wrapper = styled.section`
   margin: 0 auto;
   padding: 8vh 0;
   text-align: center;
+  ${media.greaterThan('mobile')`
+    height: 100vh;
+  `}
+  ${media.lessThan('mobile')`
+    width: 300px;
+  `}
 `
 const Title = styled.h2`
   border-bottom: 4px solid ${({ theme }) => theme.colors.main};
@@ -19,21 +26,35 @@ const Title = styled.h2`
   font-weight: bold;
   margin: 0 0 32px;
   padding-bottom: 16px;
+  ${media.lessThan('mobile')`
+    font-size: 32px;
+    margin: 0 0 24px;
+  `}
 `
 
 const FlexBox = styled.div`
   display: flex;
   justify-content: space-between;
+  ${media.lessThan('mobile')`
+    display: block;
+  `}
 `
 
 const SubTitle = styled.h3`
   font-size: ${({ theme }) => theme.fontSizes.subTitle};
   font-weight: bold;
   margin-bottom: 40px;
+  ${media.lessThan('mobile')`
+    margin-bottom: 16px;
+  `}
 `
 
 const Column = styled.div`
   width: 45%;
+  ${media.lessThan('mobile')`
+    width: 100%;
+    margin-bottom: 40px;
+  `}
 `
 
 const OrganizationList = styled.div`

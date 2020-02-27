@@ -1,6 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
 import Image from '../Image'
+import { media } from '../../utils/mediaQueries'
 
 const Wrapper = styled.a`
   width: 64px;
@@ -9,6 +10,9 @@ const Wrapper = styled.a`
   display: flex;
   flex-direction: column;
   text-decoration: none;
+  ${media.lessThan('mobile')`
+    width: 48px;
+  `}
 `
 
 const Icon = styled(Image)`
@@ -19,6 +23,10 @@ const Icon = styled(Image)`
   border-radius: 50%;
   padding: 6px;
   margin-bottom: 12px;
+  ${media.lessThan('mobile')`
+    width: 48px;
+    height: 48px;
+  `}
 `
 
 const Name = styled.div`
