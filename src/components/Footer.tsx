@@ -11,6 +11,7 @@ const Wrapper = styled.div`
   font-size: ${({ theme }) => theme.fontSizes.paragraph};
   ${media.lessThan('mobile')`
     font-size: 16px;
+    height: 100px;
   `}
 `
 

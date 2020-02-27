@@ -6,7 +6,6 @@ import { media } from '../../utils/mediaQueries'
 
 const Wrapper = styled.section`
   width: ${({ theme }) => `${theme.layout.width}px`};
-  height: 100vh;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;

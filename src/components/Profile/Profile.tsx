@@ -5,13 +5,15 @@ import { media } from '../../utils/mediaQueries'
 
 const Wrapper = styled.section`
   width: ${({ theme }) => `${theme.layout.width}px`};
-  height: 100vh;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   margin: 0 auto;
   padding: 8vh 0;
   text-align: center;
+  ${media.greaterThan('mobile')`
+    height: 100vh;
+  `}
   ${media.lessThan('mobile')`
     width: 300px;
   `}
