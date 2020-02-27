@@ -57,9 +57,21 @@ const Profile: React.FC = () => (
     <Email>saitoeku3[at]gmail.com</Email>
     <Small>I&apos;m into …</Small>
     <HobbyList>
-      <HobbyItem name="Programing" description="JavaScript, TypeScript, Node.js, Ruby, Rust" />
-      <HobbyItem name="Baseball" description="Yokohama DeNA Baystars, Tampa Bay Rays" />
-      <HobbyItem name="Music" description="EDM, Future Bass, J-POP, Band, HIPHOP" />
+      <HobbyItem
+        name="Programing"
+        description="JavaScript, TypeScript, Node.js, Ruby, Rust"
+        imageUrl="programing.jpg"
+      />
+      <HobbyItem
+        name="Baseball"
+        description="Yokohama DeNA Baystars, Tampa Bay Rays"
+        imageUrl="baseball.jpg"
+      />
+      <HobbyItem
+        name="Music"
+        description="EDM, Future Bass, J-POP, Band, HIPHOP"
+        imageUrl="music.jpg"
+      />
     </HobbyList>
   </Wrapper>
 )
