@@ -56,7 +56,7 @@ const Works: React.FC = () => (
       <WorkItem
         name="Official Site"
         imageUrl="official-site.png"
-        description="Official Site for a virtual creator (work in progress)"
+        description="Official Site for a creator (WIP)"
       />
       <WorkItem
         name="clipstudio.js"
