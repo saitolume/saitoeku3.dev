@@ -54,7 +54,7 @@ const SocialList = styled.div`
 const Hero: React.FC = () => (
   <Wrapper>
     <Thumbnail
-      src="https://pbs.twimg.com/profile_images/1209880502628339713/o9n49BRR_400x400.jpg"
+      src="https://pbs.twimg.com/profile_images/1260941600319918080/QitPd2Km_400x400.jpg"
       alt="saitoeku3"
     />
     <Name>saitoeku3</Name>
