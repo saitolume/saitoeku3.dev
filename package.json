@@ -14,7 +14,7 @@
   },
   "dependencies": {
     "core-js": "3",
-    "gatsby": "^2.19.22",
+    "gatsby": "^4.25.7",
     "gatsby-background-image": "^0.10.2",
     "gatsby-image": "^2.2.41",
     "gatsby-plugin-manifest": "^2.2.42",
